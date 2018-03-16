@@ -9,15 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var leftbomb:UIImageView!
+    @IBOutlet weak var rightbomb:UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+@IBAction func bleftbomb()
+{
+    leftbomb.isHidden=true
+    
+    }
+    
+    @IBAction func brightbomb()
+    {
+        
+        rightbomb.isHidden=true
     }
 
 
